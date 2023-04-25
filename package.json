@@ -2,16 +2,12 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Moeletji.github.io/star-wars-react-redux-app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
-    "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.22",
+    "@types/axios": "^0.14.0",
     "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
     "@types/react-redux": "^7.1.25",
     "@types/redux-mock-store": "^1.0.3",
     "ag-grid-community": "^29.3.1",
@@ -29,6 +25,7 @@
     "react-spinkit": "^3.0.0",
     "redux-mock-store": "^1.5.4",
     "styled-components": "^5.3.10",
+    "ts-jest": "^26.5.6",
     "typescript": "^4.2.4",
     "web-vitals": "^1.1.1"
   },
@@ -37,7 +34,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -60,6 +57,10 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@types/jest": "^29.5.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-spinkit": "^3.0.7",
     "@types/styled-components": "^5.1.26",
