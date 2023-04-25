@@ -5,7 +5,7 @@ import Species from '../Species';
 
 const getSpecies = jest.fn().mockResolvedValue({});
 
-describe (`Films Page`, () => {
+describe (`Species section`, () => {
     const species: string[] = [];
 
     beforeEach(() => {

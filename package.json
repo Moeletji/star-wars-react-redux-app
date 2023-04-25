@@ -57,6 +57,7 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.21.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@types/jest": "^29.5.1",
     "@types/react": "^18.2.0",
@@ -65,5 +66,8 @@
     "@types/react-spinkit": "^3.0.7",
     "@types/styled-components": "^5.1.26",
     "gh-pages": "^5.0.0"
+  },
+  "transform": {
+    "\\.tsx$": "<rootDir>/node_modules/babel-jest"
   }
 }

@@ -1,7 +1,8 @@
 import React from 'react';
-import { waitFor, screen } from '@testing-library/react';
-import { render } from '../../test/render';
+import { waitFor, screen, render } from '@testing-library/react';
+// import { render, renderWithStore } from '../../test/render';
 import Films from '../Films';
+import { MemoryRouter } from 'react-router-dom';
 
 const getAllFilms = jest.fn().mockResolvedValue({});
 
@@ -11,7 +12,7 @@ describe (`Films Page`, () => {
     })
 
     it('calls required api', () => {
-        const {container} = render(<Films />);
+        const {container} = render(<MemoryRouter><Films /></MemoryRouter>);
         expect(getAllFilms()).toHaveBeenCalled();
     });
 });

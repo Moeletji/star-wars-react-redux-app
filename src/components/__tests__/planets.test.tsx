@@ -5,7 +5,7 @@ import Planets from '../Planets';
 
 const getPlanet = jest.fn().mockResolvedValue({});
 
-describe (`Films Page`, () => {
+describe (`Planet section`, () => {
     const planets: string[] = [];
 
     beforeEach(() => {

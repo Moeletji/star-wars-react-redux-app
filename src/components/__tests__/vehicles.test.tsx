@@ -5,7 +5,7 @@ import Vehicles from '../Vehicles';
 
 const getVehicle = jest.fn().mockResolvedValue({});
 
-describe (`Films Page`, () => {
+describe (`Vehicles section`, () => {
     const vehicles: string[] = [];
 
     beforeEach(() => {

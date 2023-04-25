@@ -5,7 +5,7 @@ import Starships from '../Starships';
 
 const getStarship = jest.fn().mockResolvedValue({});
 
-describe (`Films Page`, () => {
+describe (`Starships section`, () => {
     const starships: string[] = [];
 
     beforeEach(() => {
